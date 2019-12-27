@@ -21,4 +21,4 @@ https://help.github.com/en/github/writing-on-github/basic-writing-and-formatting
 - [ ]  Open a pull request
 
 ##### Mentioning people and teams
-@github/support 
+[@github/support](www.naver.com "NAVER")
