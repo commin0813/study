@@ -13,5 +13,17 @@
 - mvn --version
 
 ##### 3.Itellij 설치
-- 
-
+- Lombok 설치
+  - Intellij Idea 에서 Preference -> Plugins -> Browse Repositories 에 들어가 ‘Lombok Plugin’ 을 추가한다.
+  - Prepference -> Build, Execution, Deployment -> Compiler -> Annotation Processors :  ‘Enable Annotation Processors’ 체크
+  - MAVEN : https://search.maven.org/artifact/org.projectlombok/lombok/1.18.10/jar
+- javax:servlet 설치
+  - MAVEN : https://search.maven.org/artifact/javax.servlet/javax.servlet-api/4.0.1/jar
+- maven war 설치
+  - MAVEN : https://maven.apache.org/plugins/maven-war-plugin/usage.html
+- Apache Tomcat 설치
+  - Apache Tomcat version 8.5 implements the Servlet 3.1
+  - Apache Tomcat version 9.0 implements the Servlet 4.0
+  - tomcat 에 webapps 폴더에 war 파일을 넣으면 자동으로 압축을 푼다.
+  - web.xml 에서 설정한 경로를 입력하면 Servlet이 동작한다.
+  
