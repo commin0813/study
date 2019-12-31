@@ -17,7 +17,7 @@ https://help.github.com/en/github/writing-on-github/basic-writing-and-formatting
 
 ##### Task lists
 - [x] Finish my changes
-- [O]  Push my commits to Github
+- [ ]  Push my commits to Github
 - [ ]  Open a pull request
 
 ##### Mentioning people and teams
