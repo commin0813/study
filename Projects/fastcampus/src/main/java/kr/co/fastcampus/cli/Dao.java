@@ -17,11 +17,17 @@ public class Dao {
 		return new Dao( );
 	}
 
-	public void run( ) {
-		String url = "jdbc:h2:mem:test;MODE=MySQL";
-		try ( Connection connection = DriverManager.getConnection( url , "sa" , "" ) ;
-		      Statement statement = connection.createStatement( ) ) {
 
+	Connection connection;
+
+	public Dao( Connection connection ) {
+		this.connection = connection;
+	}
+
+
+	public void run( ) {
+		try {
+			Statement statement = connection.createStatement( );
 			//Transaction 처리
 			connection.setAutoCommit( false );
 
