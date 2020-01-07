@@ -3,6 +3,20 @@ package kr.co.fastcampus.cli;
 import java.sql.*;
 
 public class Dao {
+
+	public Dao( ) {
+		System.out.println( "Beans by 'Basic Constructure' Create Class" );
+	}
+
+	public Dao( String param ) {
+		System.out.println( "Beans by 'Arg Constructure' Create Class" );
+	}
+
+	public static Dao createDao( ) {
+		System.out.println( "Beans by 'Factory Method' Create Class" );
+		return new Dao( );
+	}
+
 	public void run( ) {
 		String url = "jdbc:h2:mem:test;MODE=MySQL";
 		try ( Connection connection = DriverManager.getConnection( url , "sa" , "" ) ;
@@ -23,6 +37,7 @@ public class Dao {
 				Member member = new Member( resultSet );
 				System.out.println( member.toString( ) );
 			}
+
 		} catch ( SQLException e ) {
 
 		}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="dao" name="dao1 dao2,dao3" class="kr.co.fastcampus.cli.Dao"/>
+
+    <bean id="new_dao" name="new_dao1 new_dao2,new_dao3" class="kr.co.fastcampus.cli.Dao"/>
+
+    <bean id="factory_dao" class="kr.co.fastcampus.cli.Dao"
+          factory-method="createDao"
+    />
+
+
+    <bean id="daoFactory" class="kr.co.fastcampus.cli.DaoFactory"/>
+
+    <bean id="instance_dao" class="kr.co.fastcampus.cli.Dao"
+          factory-bean="daoFactory"
+          factory-method="create"
+    />
+
+</beans>
