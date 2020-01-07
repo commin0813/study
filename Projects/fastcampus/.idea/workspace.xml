@@ -2,21 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63bb00b2-34ca-4370-9ed8-c1392899c993" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/kr/co/fastcampus/cli/ConnectionFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/kr/co/fastcampus/cli/Dao2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/kr/co/fastcampus/cli/ConnectionFactory.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/kr/co/fastcampus/cli/Dao2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_6_0_RC1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_6_0_RC1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_6_0_RC1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_6_0_RC1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_vintage_junit_vintage_engine_5_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/fastcampus/BeanScopeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/fastcampus/BeanScopeTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kr/co/fastcampus/cli/Dao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/co/fastcampus/cli/Dao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kr/co/fastcampus/cli/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/co/fastcampus/cli/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kr/co/fastcampus/cli/di/A.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/co/fastcampus/cli/di/A.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kr/co/fastcampus/cli/di/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/co/fastcampus/cli/di/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/dao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kr/co/fastcampus/cli/Dao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kr/co/fastcampus/cli/Dao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kr/co/fastcampus/cli/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kr/co/fastcampus/cli/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kr/co/fastcampus/cli/di/A.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kr/co/fastcampus/cli/di/A.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kr/co/fastcampus/cli/di/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kr/co/fastcampus/cli/di/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springbagic.iml" beforeDir="false" afterPath="$PROJECT_DIR$/springbagic.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -226,7 +227,7 @@
       <workItem from="1578038363895" duration="1992000" />
       <workItem from="1578286161738" duration="892000" />
       <workItem from="1578357320657" duration="318000" />
-      <workItem from="1578358414289" duration="8546000" />
+      <workItem from="1578358414289" duration="10357000" />
     </task>
     <task id="LOCAL-00001" summary="Chapter 04. 스프링 프레임워크 코어 Beans">
       <created>1578371453939</created>
@@ -235,7 +236,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578371453939</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Chapter 04. 스프링 프레임워크 코어&#10;The IOC Container - Dependencies">
+      <created>1578383355098</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1578383355098</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -243,7 +251,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Chapter 04. 스프링 프레임워크 코어 Beans" />
-    <option name="LAST_COMMIT_MESSAGE" value="Chapter 04. 스프링 프레임워크 코어 Beans" />
+    <MESSAGE value="Chapter 04. 스프링 프레임워크 코어&#10;The IOC Container - Dependencies" />
+    <option name="LAST_COMMIT_MESSAGE" value="Chapter 04. 스프링 프레임워크 코어&#10;The IOC Container - Dependencies" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="182" key="#Auto_Import" timestamp="1577529096939">
@@ -298,10 +307,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1577696619702" />
-    <state x="577" y="28" key="CommitChangelistDialog2" timestamp="1578371451011">
+    <state x="577" y="28" key="CommitChangelistDialog2" timestamp="1578385772387">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="577" y="28" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1578371451011" />
+    <state x="577" y="28" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1578385772387" />
     <state x="990" y="310" key="FileChooserDialogImpl" timestamp="1577755434991">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -356,10 +365,10 @@
     </state>
     <state x="468" y="243" width="1286" height="709" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1577531485288" />
     <state x="415" y="171" key="SettingsEditor/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1578359117165" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1578371456843">
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1578383356925">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1578371456843" />
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1578383356925" />
     <state x="753" y="298" key="chooseDestDirectoryDialog" timestamp="1577756033886">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
