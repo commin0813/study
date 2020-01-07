@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="springbagic:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>springbagic</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="springbasic.war">
+      <element id="artifact" artifact-name="springbagic:war exploded" />
+    </root>
+  </artifact>
+</component>
