@@ -14,7 +14,7 @@ public class Dao2 {
 		System.out.println( "Beans by 'Arg Constructure' Create Class" );
 	}
 
-		public static Dao2 createDao ( ) {
+	public static Dao2 createDao ( ) {
 		System.out.println( "Beans by 'Factory Method' Create Class" );
 		return new Dao2( );
 	}

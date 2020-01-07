@@ -40,6 +40,7 @@
 
 
     <bean id="connectionFactory" class="kr.co.fastcampus.cli.ConnectionFactory">
+        <constructor-arg name="driverClass" value="org.h2.Driver"></constructor-arg>
         <constructor-arg name="url" value="jdbc:h2:mem:test;MODE=MySQL"></constructor-arg>
         <constructor-arg name="password" value=""></constructor-arg>
         <constructor-arg name="user" value="sa"></constructor-arg>
