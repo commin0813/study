@@ -367,11 +367,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1577696619702" />
-    <state x="577" y="28" key="CommitChangelistDialog2" timestamp="1578411702807">
+    <state x="577" y="28" key="CommitChangelistDialog2" timestamp="1578469011355">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="577" y="28" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1578411702807" />
-    <state x="577" y="28" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1578385772387" />
+    <state x="577" y="28" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1578469011355" />
     <state x="184" y="101" key="DiffContextDialog" timestamp="1578411682127">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -434,10 +434,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="498" height="477" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1578411460100" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1578383356925">
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1578469029407">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1578383356925" />
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1578469029407" />
     <state x="753" y="298" key="chooseDestDirectoryDialog" timestamp="1577756033886">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -455,6 +455,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="643" y="92" width="633" height="855" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1578407807970" />
+    <state x="686" y="293" key="git4idea.merge.GitPullDialog" timestamp="1578469119103">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="686" y="293" key="git4idea.merge.GitPullDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1578469119103" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1578371153747">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
