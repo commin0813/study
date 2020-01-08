@@ -14,20 +14,20 @@ public class Dao2 {
 		System.out.println( "Beans by 'Arg Constructure' Create Class" );
 	}
 
-	public static Dao2 createDao ( ) {
+	public static Dao2 createDao( ) {
 		System.out.println( "Beans by 'Factory Method' Create Class" );
 		return new Dao2( );
 	}
 
 
-		Connection connection;
+	private Connection connection;
 
 	public Dao2( Connection connection ) {
 		this.connection = connection;
 	}
 
 
-	public void run ( ) throws Exception{
+	public void run( ) throws Exception {
 		Statement statement = connection.createStatement( );
 		//Transaction 처리
 		connection.setAutoCommit( false );

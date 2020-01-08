@@ -3,9 +3,14 @@ package kr.co.fastcampus.cli;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import java.sql.Connection;
+
 class Main {
 	public static void main( String[] ar ) throws ClassNotFoundException, Exception {
 		ApplicationContext context = new ClassPathXmlApplicationContext( "dao.xml" , "bean.xml" );
+		ConnectionFactory connectionFactory = context.getBean( "connectionFactory" , ConnectionFactory.class );
+		Connection connection = connectionFactory.getConnection( );
+		System.out.println( "" );
 //		Ab a1 = context.getBean( "Ab" , Ab.class );
 //		Ab a2 = context.getBean( "Ab" , Ab.class );
 //
@@ -35,8 +40,9 @@ class Main {
 //		factory_dao.run( );
 //		instance_dao.run( );
 
-		Dao2 dao2 = context.getBean( "dao2" , Dao2.class );
-		dao2.run( );
+//		Dao2 dao2 = context.getBean( "dao2" , Dao2.class );
+//		dao2.run( );
+
 
 	}
 }
