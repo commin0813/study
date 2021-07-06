@@ -1,39 +1,39 @@
 import axios from 'axios'
 import React, { useState } from 'react'
-import { useDispatch} from 'react-redux'
+import { useDispatch } from 'react-redux'
 import { loginUser } from '../../../_actions/user_action'
-
+import { withRouter } from 'react-router-dom'
 function LoginPage(props) {
     const dispatch = useDispatch()
 
     const [Email, setEmail] = useState("")
     const [Password, setPassword] = useState("")
-    const onEmailHandler = (event) =>{
+    const onEmailHandler = (event) => {
         setEmail(event.currentTarget.value)
     }
-    const onPasswordHandler = (event) =>{
+    const onPasswordHandler = (event) => {
         setPassword(event.currentTarget.value)
     }
-    const onSubmitHandler = (event) =>{
+    const onSubmitHandler = (event) => {
         event.preventDefault();
-        console.log("Email",Email)
-        console.log("PW",Password)
+        console.log("Email", Email)
+        console.log("PW", Password)
 
         let body = {
-            email : Email,
-            password : Password
+            email: Email,
+            password: Password
         }
 
         dispatch(loginUser(body))
-        .then(response => {
-            if(response.payload.loginSuccess){
-                props.history.push('/')
-            }else{
-                alert('Err')
-            }
-        })
+            .then(response => {
+                if (response.payload.loginSuccess) {
+                    props.history.push('/')
+                } else {
+                    alert('Err')
+                }
+            })
 
-        
+
 
     }
 
@@ -53,4 +53,4 @@ function LoginPage(props) {
     )
 }
 
-export default LoginPage
+export default withRouter(LoginPage)
