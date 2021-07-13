@@ -1,21 +1,39 @@
-import React from "react";
-import {Avatar, Button, Card, Popover} from "antd";
-import {EllipsisOutlined, HeartOutlined, MessageOutlined, RetweetOutlined} from "@ant-design/icons";
-import {useSelector} from "react-redux";
+import React ,{useState,useCallback} from "react";
+import { Avatar, Button, Card, Popover } from "antd";
+import { EllipsisOutlined, HeartOutlined, MessageOutlined, RetweetOutlined, HeartTwoTone } from "@ant-design/icons";
+import { useSelector } from "react-redux";
 import PropTypes from 'prop-types'
 import PostImages from "./PostImages";
 
-const PostCard = ({post}) => {
+const PostCard = ({ post }) => {
     const id = useSelector((state) => state.user.me?.id);
+    const [liked, setliked] = useState(false)
+    const [commentFormOpend, setcommentFormOpend] = useState(false)
+    const onToggleLike = useCallback(
+        () => {
+            setliked((prev) => !prev);
+        },
+        [],
+    )
+    const onToggleComment = useCallback(
+        () => {
+            setcommentFormOpend((prev) => !prev);
+        },
+        [],
+    )
+
     // const id = me?.id
     return (
-        <div>
+        <div style={{ marginTop: 20 }}>
             <Card
-                cover={post.Images[0] && <PostImages images={post.Images}/>}
+                cover={post.Images[0] && <PostImages images={post.Images} />}
                 actions={[
-                    <RetweetOutlined key="retweet"/>,
-                    <HeartOutlined key="heart"/>,
-                    <MessageOutlined key="comment"/>,
+                    <RetweetOutlined key="retweet" />,
+                    liked ?
+                        <HeartTwoTone twoToneColor="#eb2f96" onClick={onToggleLike} key="heart" />
+                        : <HeartOutlined onClick={onToggleLike} key="heart" />
+                    ,
+                    <MessageOutlined key="comment" onClick={onToggleComment} />,
                     <Popover key="more" content={
                         (
                             <Button.Group>
@@ -29,7 +47,7 @@ const PostCard = ({post}) => {
                             </Button.Group>
                         )
                     }>
-                        <EllipsisOutlined/>
+                        <EllipsisOutlined />
                     </Popover>
                 ]}
             >
@@ -39,10 +57,14 @@ const PostCard = ({post}) => {
                     title={post.User.nickname}
                     description={post.content}
                 />
-                {/*<Image/>*/}
-                {/*<Content/>*/}
             </Card>
-
+            {
+                commentFormOpend && (
+                    <div>
+                        댓글 부분
+                    </div>
+                )
+            }
             {/*<CommentForm/>*/}
             {/*<Comments/>*/}
         </div>
