@@ -22,6 +22,11 @@ export const initialState = {
                 nickname : 'hero',
             },
             content : '얼른 사고 싶어요~'
+        },{
+            User : {
+                nickname : 'hero2',
+            },
+            content : '얼른 사고 싶어요~2'
         }]
     }],
     ImagePaths:[],
@@ -32,6 +37,8 @@ const ADD_POST = 'ADD_POST'
 export const addPost = {
     type : ADD_POST,
 }
+
+
 
 const dummyPost = {
     id:2,
@@ -56,12 +63,25 @@ const dummyPost = {
             nickname : 'hero',
         },
         content : '얼른 사고 싶어요~'
+    },{
+        User : {
+            nickname : 'hero2',
+        },
+        content : '얼른 사고 싶어요~2'
     }]
+}
+
+const dummyContent = {
+    User : {
+        nickname : 'hero3',
+    },
+    content : '얼른 사고 싶어요~3'
 }
 
 const reducer = (state = initialState, action) => {
     switch (action.type) {
         case ADD_POST:
+            console.log(action)
             return {
                 ...state,
                 mainPosts: [dummyPost,...state.mainPosts],
