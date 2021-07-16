@@ -11,10 +11,9 @@ export const initialState = {
                 src : 'https://eduvation.s3.ap-northeast-2.amazonaws.com/uploadFile/PROFILE_E/2021/6/15/ec6e42aa-973c-450c-bc77-676326ce941f.jpg'
             },
             {
-                src : 'https://eduvation.s3.ap-northeast-2.amazonaws.com/uploadFile/PROFILE_E/2021/6/15/ec6e42aa-973c-450c-bc77-676326ce941f.jpg'
-            },
-            {
-                src : 'https://eduvation.s3.ap-northeast-2.amazonaws.com/uploadFile/PROFILE_E/2021/6/15/ec6e42aa-973c-450c-bc77-676326ce941f.jpg'
+                src : 'https://eduvation.s3.ap-northeast-2.amazonaws.com/uploadFile/PROFILE_S/2021/6/15/33dc8a81-48c8-4cc4-b97e-ab5b5f370c88.jpeg'
+            },{
+                src : 'https://eduvation.s3.ap-northeast-2.amazonaws.com/uploadFile/PROFILE_S/2021/6/15/33dc8a81-48c8-4cc4-b97e-ab5b5f370c88.jpeg'
             },
         ],
         Comments : [{
@@ -54,9 +53,7 @@ const dummyPost = {
         {
             src : 'https://eduvation.s3.ap-northeast-2.amazonaws.com/uploadFile/PROFILE_E/2021/6/15/ec6e42aa-973c-450c-bc77-676326ce941f.jpg'
         },
-        {
-            src : 'https://eduvation.s3.ap-northeast-2.amazonaws.com/uploadFile/PROFILE_E/2021/6/15/ec6e42aa-973c-450c-bc77-676326ce941f.jpg'
-        },
+
     ],
     Comments : [{
         User : {
