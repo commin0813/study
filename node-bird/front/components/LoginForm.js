@@ -5,7 +5,8 @@ import styled from 'styled-components'
 import PropType from "prop-types";
 import FollowList from "./FollowList";
 import {useDispatch} from "react-redux";
-import {loginAction} from "../reducers/user";
+import {loginRequestAction} from "../reducers/user";
+import {useSelector} from "react-redux";
 
 // const ButtonWrapper = styled.div`
 //     margin-top : 20px
@@ -14,7 +15,7 @@ import {loginAction} from "../reducers/user";
 const LoginForm = () => {
 
     const dispatch = useDispatch();
-
+    const {isLoggedingIn} = useSelector((state) => state.user)
     const [password, setPassword] = useState('');
     const [id, setId] = useState('');
 
@@ -27,7 +28,7 @@ const LoginForm = () => {
     }, [])
 
     const onSubmitForm = useCallback(() => {
-        dispatch(loginAction(id, password));
+        dispatch(loginRequestAction(id, password));
     }, [id, password])
 
     const style = useMemo(() => ({marginLeft: 10, marginTop: 10, padding: 10}), []);
@@ -46,7 +47,7 @@ const LoginForm = () => {
             </div>
 
             <div style={buttonStyle}>
-                <Button type='primary' htmlType='submit' loading={false}>로그인</Button>
+                <Button type='primary' htmlType='submit' loading={isLoggedingIn}>로그인</Button>
                 <Link href='/signup'><Button>회원가입</Button></Link>
             </div>
 
