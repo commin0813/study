@@ -13,9 +13,9 @@ const PostForm = () => {
     const dispatch = useDispatch();
     const imageInput = useRef();
 
-    const onClickImageUpload = useCallback(()=>{
+    const onClickImageUpload = useCallback(() => {
         imageInput.current.click();
-    },[imageInput.current])
+    }, [imageInput.current])
 
     const onSubmit = useCallback(() => {
         dispatch(addPost)

@@ -22,9 +22,9 @@ const CommentForm = ({post}) => {
 
     return (
         <Form onFinish={onSubmitComment}>
-            <Form.Item >
+            <Form.Item>
                 <Input.TextArea value={commentText} onChange={onChangeCommentText} rows={4}/>
-                <Button style={{position: 'absolute', right: 0, bottom:-40}} type="primary"
+                <Button style={{position: 'absolute', right: 0, bottom: -40}} type="primary"
                         htmlType="submit">전송</Button>
             </Form.Item>
         </Form>

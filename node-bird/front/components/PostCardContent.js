@@ -5,11 +5,13 @@ import Link from 'next/Link'
 const PostCardContent = ({postData}) => {
     return (
         <div>
-            {postData.split(/(#[^\s#]+)/g).map((p, i) => {
-                if (p.match(/(#[^\s#]+)/)) {
-                    return (<Link href={`/hashtag/${p.slice(1)}`} key={i}><a>{p}</a></Link>)
-                }
-            })}
+            {
+                postData.split(/(#[^\s#]+)/g).map((p, i) => {
+                    if (p.match(/(#[^\s#]+)/)) {
+                        return (<Link href={`/hashtag/${p.slice(1)}`} key={i}><a>{p}</a></Link>)
+                    }
+                })
+            }
         </div>
     )
 }
