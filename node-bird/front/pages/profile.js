@@ -5,8 +5,9 @@ import FollowList from '../components/FollowList';
 import Head from 'next/head'
 
 const Profile = () => {
-    const followingList = [{ nickname: '제로초ing' }, { nickname: '제로ing' }, { nickname: '노드노드ing' }]
-    const followerList = [{ nickname: '제로초' }, { nickname: '제로' }, { nickname: '노드노드' }]
+
+    const {me} = useSelector((state) => state.user)
+
     return (
         <>
             <Head>
@@ -14,8 +15,8 @@ const Profile = () => {
             </Head>
             <AppLayout>
                 <NicknameEditForm />
-                <FollowList header="팔로잉 목록" data={followingList} />
-                <FollowList header="팔로워 목록" data={followerList} />
+                <FollowList header="팔로잉 목록" data={me.Followings} />
+                <FollowList header="팔로워 목록" data={me.Followers} />
             </AppLayout>
         </>
     );

@@ -15,12 +15,12 @@ import {useSelector} from "react-redux";
 const LoginForm = () => {
 
     const dispatch = useDispatch();
-    const {isLoggedingIn} = useSelector((state) => state.user)
+    const {logInLoading} = useSelector((state) => state.user)
     const [password, setPassword] = useState('');
-    const [id, setId] = useState('');
+    const [email, setEmail] = useState('');
 
-    const onChangeId = useCallback((e) => {
-        setId(e.target.value)
+    const onChangeEmail = useCallback((e) => {
+        setEmail(e.target.value)
     }, [])
 
     const onChangePassword = useCallback((e) => {
@@ -28,17 +28,17 @@ const LoginForm = () => {
     }, [])
 
     const onSubmitForm = useCallback(() => {
-        dispatch(loginRequestAction(id, password));
-    }, [id, password])
+        dispatch(loginRequestAction(email, password));
+    }, [email, password])
 
     const style = useMemo(() => ({marginLeft: 10, marginTop: 10, padding: 10}), []);
     const buttonStyle = useMemo(() => ({marginTop: 10}), []);
     return (
         <Form style={style} onFinish={onSubmitForm}>
             <div>
-                <label htmlFor='user-id'>아이디</label>
+                <label htmlFor='user-email'>이메일</label>
                 <br/>
-                <Input name='user-id' value={id} onChange={onChangeId} required/>
+                <Input name='user-email' type="email" value={email} onChange={onChangeEmail} required/>
             </div>
             <div>
                 <label htmlFor='user-password'>비밀번호</label>
@@ -47,7 +47,7 @@ const LoginForm = () => {
             </div>
 
             <div style={buttonStyle}>
-                <Button type='primary' htmlType='submit' loading={isLoggedingIn}>로그인</Button>
+                <Button type='primary' htmlType='submit' loading={logInLoading}>로그인</Button>
                 <Link href='/signup'><Button>회원가입</Button></Link>
             </div>
 
