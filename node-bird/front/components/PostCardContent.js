@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Link from 'next/Link'
 
 const PostCardContent = ({postData}) => {
-    console.log("POSTCONENT : ", postData)
+    console.log("PostCardContent", typeof (postData), postData)
     return (
         <div>
             {
