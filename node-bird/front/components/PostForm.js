@@ -1,5 +1,5 @@
 import { Button, Form, Input } from "antd";
-import React, { useCallback, useRef, useState } from "react";
+import React, {useCallback, useEffect, useRef, useState} from "react";
 import { useDispatch, useSelector } from "react-redux";
 import useInput from "../hooks/useInput";
 import { addPost } from "../reducers/post";
@@ -25,6 +25,8 @@ const PostForm = () => {
     const onSubmit = useCallback(() => {
         dispatch(addPost(text))
     }, [text])
+
+
     return (
         <Form style={{ margin: '10px 0 20px' }} encType="multipart/form-data" onFinish={onSubmit}>
             <Input.TextArea
