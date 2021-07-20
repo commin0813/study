@@ -51,14 +51,14 @@ export const initialState = {
     addCommentError: null,
 }
 
-initialState.mainPostsinitialState.mainPosts.concat(
+initialState.mainPosts = initialState.mainPosts.concat(
     Array(20).fill().map(() => ({
         id: shortId.generate(),
         User: {
             id: shortId.generate(),
             nickname: faker.name.findName(),
         },
-        content: 'aasdasdsadasd',
+        content: faker.lorem.sentence(),
         Images: [{
             src: faker.image.imageUrl(),
         }],
